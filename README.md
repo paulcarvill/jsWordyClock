@@ -6,7 +6,7 @@ There is a single constructor function called JsWordyClock. It takes two argumen
 
 _required_: an HTML element, used as the container for the clock
 
-_optional_: a font size, in string form, including the measurement unit. Defaults to '1em' if omitted.
+_optional_: a font size, in string form, including the measurement unit. Defaults to '1em' if omitted. You may need to play around with the font size to get it to fit your container nicely. I use a monospace font so the text will be justified on both sides, but there's no auto-scaling yet, hence the need to set the size manually.
 
 Include either src/jsWordyClock or dist/jsWordyClock-min.js on your web page:
 
