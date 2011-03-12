@@ -4,13 +4,14 @@
   <meta charset='utf-8'>
 
   <title>paulcarvill/jsWordyClock @ GitHub</title>
-
+	<script src="jsWordyClock-min.js"></script>
+	
   <style type="text/css">
     body {
       margin-top: 1.0em;
-      background-color: #333;
+      background-color: #fff;
       font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
+      color: #333;
     }
     #container {
       margin: 0 auto;
@@ -29,6 +30,7 @@
     .footer { text-align:center; padding-top:30px; font-style: italic; }
 	p { line-height: 2em; }
 	a img { border: 0; }
+	pre { background: none; }
   </style>
 </head>
 
@@ -48,7 +50,13 @@
       <span class="small">by <a href="http://github.com/paulcarvill">paulcarvill</a></span></h1>
 
 	<p>JsWordyClock is a JavaScript port of <a href="http://kenlim.github.com/pyWordyClock/">Ken Lim's pyWordyClock</a>, with the appropriate modifications for use on the web as an <a href="http://internetclocks.tumblr.com/">Internet Clock</a>. It's a word-based, approximate time clock, accurate to within about 3 minutes, and updates itself every minute. It comes with its own JavaScript test suite.</p>
-	<p>You can see it in action on my website <a href="http://www.paulcarvill.com/">http://www.paulcarvill.com/</a></p>
+	<p>You can see it in action on my website <a href="http://www.paulcarvill.com/">http://www.paulcarvill.com/</a>, and also just below.</p>
+
+	<div id="clock"></div>
+	<script>
+		var div = document.getElementById('clock');
+		var clock = new JsWordyClock(div, '100px');
+	</script>
 
 	<a href="https://github.com/paulcarvill/jsWordyClock"><img src="screengrab.png" width="700" height="641" /></a>
 	
