@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<script src="jsWordyClock-min.js"></script>
+	</head>
+	<body>
+		
+		<h1>Wordy clock</h1>
+		
+		<div id="clock" style="float: left; width: 250px;"></div>
+
+		<div id="clock2" style="float: right; width: 500px;"></div>
+		
+		<div style="clear: both;">
+			TODO:
+				<p>config for colours, sizes
+				<p>Auto scaling to size of container
+		</div>
+		
+		<script>
+			var div = document.getElementById('clock');
+			var clock = new JsWordyClock(div, '38px');
+			
+			var div = document.getElementById('clock2');
+			var clock = new JsWordyClock(div, '76px');
+		</script>
+	</body>
+</html>
