@@ -5,6 +5,7 @@ JsWordyClock is a JavaScript port of [Ken Lim's pyWordyClock](http://kenlim.gith
 There is a single constructor function called JsWordyClock. It takes two arguments:
 
 _required_: an HTML element, used as the container for the clock
+
 _optional_: a font size, in string form, including the measurement unit. Defaults to '1em' if omitted.
 
 Include either src/jsWordyClock or dist/jsWordyClock-min.js on your web page:
